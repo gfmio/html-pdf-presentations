@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+// Helper functions and mixins
+@import "_helpers";
+
+// Settings
+@import "_settings";
+
+// Reset
+@import "_normalize";
+
+// General-purpose global styles
+@import "_global";
+
+// Basic styles (style classes for font-colors, background-colors, fonts, margins, paddings, etc.)
+@import "_basic";
+
+// Typography
+@import "_typography";
+
+// Slide styles
+@import "_slides";
+
+// Custom
+@import "_custom";

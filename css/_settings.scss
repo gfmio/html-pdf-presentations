@@ -1,0 +1,69 @@
+// 
+// Basic settings (colors, fonts, font sizes, margins, paddings, ...)
+//
+
+$colors: (
+  "red" #FD2E00,
+  "green" #BEDB39,
+  "blue" #004358,
+  "yellow" #FFE11A,
+  "black" #111111,
+  "white" #FFFFFF
+);
+
+$fonts: (
+  "lato": (
+    font-family: ("Lato", "Helvetica Neue", Helvetica, Arial, sans-serif), 
+    font-weight: font-weight("normal"),
+    letter-spacing: 0,
+    word-spacing: 0,
+    text-rendering: optimizeLegibility
+  ),
+  "lato-light": (
+    font-family: ("Lato", "Helvetica Neue", Helvetica, Arial, sans-serif), 
+    font-weight: font-weight("light"),
+    letter-spacing: 0,
+    word-spacing: 0,
+    text-rendering: optimizeLegibility
+  ),
+  "lato-thin": (
+    font-family: ("Lato", "Helvetica Neue", Helvetica, Arial, sans-serif), 
+    font-weight: font-weight("thin"),
+    letter-spacing: 0,
+    word-spacing: 0,
+    text-rendering: optimizeLegibility
+  ),
+  "mono": (
+    font-family: ("Menlo", "Consolas", "Courier New", "Courier", monospace),
+    letter-spacing: 0,
+    word-spacing: 0,
+    text-rendering: optimizeLegibility
+  )
+);
+
+$font-sizes: normal 1.0, small 0.9, xsmall 0.8, large 1.3, xlarge 1.6, xxlarge 1.8, huge 2.5, xhuge 3.5, xxhuge 5.0;
+$paddings: none 0, micro 0.25, small 0.5, medium 1.0, large 1.5, xlarge 2.0, xxlarge 3.0, huge 4.5, xhuge 6, xxhuge 7.5;
+$margins: none 0, micro 0.25, small 0.5, medium 1.0, large 1.5, xlarge 2.0, xxlarge 3.0, huge 4.5, xhuge 6, xxhuge 7.5;
+$rule-widths: none 0, thin 0.05, medium 0.1, thick 0.2;
+$font-weights: "100" 100, "thin" 100, "200" 200, "extra-light" 200, "300" 300, "light" 300, "400" 400, "normal" 400, "book" 400, "500" 500, "medium" 500, "600" 600, "semi-bold" 600, "700" 700, "bold" 700, "800" 800, "heavy" 800, "900" 900, "black" 900;
+
+$base-font-size: 64px;
+$base-line-height: 1.618;
+$min-line-height: 1.2;
+
+//
+// Basic presentation styles
+//
+
+$slide-width: 1920px;
+$slide-height: 1080px;
+
+$slide-margin-top: margin(large);
+$slide-margin-bottom: margin(large);
+$slide-margin-left: margin(large);
+$slide-margin-right: margin(large);
+
+$standard-slide-background: color("white");
+$standard-slide-font-color: color("black");
+
+$link-color: color("blue");

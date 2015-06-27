@@ -1,0 +1,96 @@
+//
+// Basic styles
+//
+
+@each $color_name, $color in $colors {
+	.text-#{$color_name}, .text-#{$color_name} * {
+		@include text-color($color_name, true);
+	}
+
+	.bg-#{$color_name}, .bg-#{$color_name} * {
+		@include bg-color($color_name, true);
+	}
+
+	.border-color-#{$color_name} {
+		@include border-color($color_name, true);
+	}
+
+	.border-left-color-#{$color_name} {
+		@include border-left-color($color_name, true);
+	}
+
+	.border-top-color-#{$color_name} {
+		@include border-top-color($color_name, true);
+	}
+
+	.border-right-color-#{$color_name} {
+		@include border-right-color($color_name, true);
+	}
+
+	.border-bottom-color-#{$color_name} {
+		@include border-bottom-color($color_name, true);
+	}
+}
+
+@each $font_name, $font_info in $fonts {
+	.font-#{$font-name} {
+		@include font($font_name, true);
+	}
+}
+
+@each $padding_name, $padding in $paddings {
+	.padding-#{$padding_name} {
+		@include padding($padding_name, true);
+	}
+	.padding-left-#{$padding_name} {
+		@include padding-left($padding_name, true);
+	}
+	.padding-top-#{$padding_name} {
+		@include padding-top($padding_name, true);
+	}
+	.padding-right-#{$padding_name} {
+		@include padding-right($padding_name, true);
+	}
+	.padding-bottom-#{$padding_name} {
+		@include padding-bottom($padding_name, true);
+	}
+}
+
+@each $margin_name, $margin in $margins {
+	.margin-#{$margin_name} {
+		@include margin($margin_name, true);
+	}
+	.margin-left-#{$margin_name} {
+		@include margin-left($margin_name, true);
+	}
+	.margin-top-#{$margin_name} {
+		@include margin-top($margin_name, true);
+	}
+	.margin-right-#{$margin_name} {
+		@include margin-right($margin_name, true);
+	}
+	.margin-bottom-#{$margin_name} {
+		@include margin-bottom($margin_name, true);
+	}
+}
+
+@each $rule-width-name, $rule-width in $rule-widths {
+	hr.#{$rule-width-name} {
+		@include rule-width($rule-width-name, true);
+	}
+	.border-#{$rule-width-name} {
+		@include border-width($rule-width-name, true);
+	}
+	.border-left-#{$rule-width-name} {
+		@include border-left-width($rule-width-name, true);
+	}
+	.border-top-#{$rule-width-name} {
+		@include border-top-width($rule-width-name, true);
+	}
+	.border-right-#{$rule-width-name} {
+		@include border-right-width($rule-width-name, true);
+	}
+	.border-bottom-#{$rule-width-name} {
+		@include border-bottom-width($rule-width-name, true);
+	}
+}
