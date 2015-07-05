@@ -16,7 +16,6 @@ Have fun building your presentations!
 ## To do:
 
 * Currently does not support animations or the like. Hence, this functionality might be added in the future.
-* Add fixed overlays (e.g. watermarks or bottom lines), also useful for complex "designs"
 
 License: MIT
 

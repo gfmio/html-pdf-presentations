@@ -32,10 +32,17 @@ $(document).ready(function(){
 
 	if (!printing) {
 		$(".slides").addClass("not-printing");
-		$(".slides section:first-child").addClass("active").addClass("first");
-		$(".slides section:last-child").addClass("last");
+		var slides = $(".slides section");
+		$(slides[0]).addClass("active").addClass("first");
+		$(slides[slides.length-1]).addClass("last");
 
 		resizeSlides();
+	} else {
+		var slides = $(".slides section");
+		n = 0;
+		for (var i = 1; i < slides.length; i++) {
+			$("div.overlay").clone().css("top", i * $(".slides").height()).appendTo( ".slides" );
+		}
 	}
 })
 
