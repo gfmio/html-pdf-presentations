@@ -413,14 +413,11 @@ body {
   visibility: "hidden"; }
 
 .vcenter {
-  height: 100%;
-  display: table-cell;
-  width: 100%;
-  vertical-align: middle;
-  padding: 0;
-  margin: 0;
-  max-width: 100vw;
-  max-height: 100vh; }
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%); }
 
 .compact {
   display: inline-block; }
@@ -441,7 +438,7 @@ body {
 
 .bg-red, .bg-red * {
   background-color: #FD2E00 !important;
-  color: #FFFFFF !important; }
+  color: #FFFFFF; }
 
 .border-color-red {
   border-color: #FD2E00 !important; }
@@ -463,7 +460,7 @@ body {
 
 .bg-green, .bg-green * {
   background-color: #BEDB39 !important;
-  color: #111111 !important; }
+  color: #111111; }
 
 .border-color-green {
   border-color: #BEDB39 !important; }
@@ -485,7 +482,7 @@ body {
 
 .bg-blue, .bg-blue * {
   background-color: #004358 !important;
-  color: #FFFFFF !important; }
+  color: #FFFFFF; }
 
 .border-color-blue {
   border-color: #004358 !important; }
@@ -507,7 +504,7 @@ body {
 
 .bg-yellow, .bg-yellow * {
   background-color: #FFE11A !important;
-  color: #111111 !important; }
+  color: #111111; }
 
 .border-color-yellow {
   border-color: #FFE11A !important; }
@@ -529,7 +526,7 @@ body {
 
 .bg-black, .bg-black * {
   background-color: #111111 !important;
-  color: #FFFFFF !important; }
+  color: #FFFFFF; }
 
 .border-color-black {
   border-color: #111111 !important; }
@@ -551,7 +548,7 @@ body {
 
 .bg-white, .bg-white * {
   background-color: #FFFFFF !important;
-  color: #111111 !important; }
+  color: #111111; }
 
 .border-color-white {
   border-color: #FFFFFF !important; }
@@ -967,6 +964,99 @@ hr.thick {
 .border-bottom-thick {
   border-bottom-width: 0.3236rem !important; }
 
+.font-size-normal {
+  font-size: 1rem !important;
+  line-height: 1.2135 !important; }
+
+.font-size-small {
+  font-size: 0.9rem !important;
+  line-height: 1.34833 !important; }
+
+.font-size-xsmall {
+  font-size: 0.8rem !important;
+  line-height: 1.51688 !important; }
+
+.font-size-large {
+  font-size: 1.3rem !important;
+  line-height: 1.24462 !important; }
+
+.font-size-xlarge {
+  font-size: 1.6rem !important;
+  line-height: 1.26406 !important; }
+
+.font-size-xxlarge {
+  font-size: 1.8rem !important;
+  line-height: 1.34833 !important; }
+
+.font-size-huge {
+  font-size: 2.5rem !important;
+  line-height: 1.2944 !important; }
+
+.font-size-xhuge {
+  font-size: 3.5rem !important;
+  line-height: 1.15571 !important; }
+
+.font-size-xxhuge {
+  font-size: 5rem !important;
+  line-height: 1.1326 !important; }
+
+.font-weight-100 {
+  font-weight: 100 !important; }
+
+.font-weight-thin {
+  font-weight: 100 !important; }
+
+.font-weight-200 {
+  font-weight: 200 !important; }
+
+.font-weight-extra-light {
+  font-weight: 200 !important; }
+
+.font-weight-300 {
+  font-weight: 300 !important; }
+
+.font-weight-light {
+  font-weight: 300 !important; }
+
+.font-weight-400 {
+  font-weight: 400 !important; }
+
+.font-weight-normal {
+  font-weight: 400 !important; }
+
+.font-weight-book {
+  font-weight: 400 !important; }
+
+.font-weight-500 {
+  font-weight: 500 !important; }
+
+.font-weight-medium {
+  font-weight: 500 !important; }
+
+.font-weight-600 {
+  font-weight: 600 !important; }
+
+.font-weight-semi-bold {
+  font-weight: 600 !important; }
+
+.font-weight-700 {
+  font-weight: 700 !important; }
+
+.font-weight-bold {
+  font-weight: 700 !important; }
+
+.font-weight-800 {
+  font-weight: 800 !important; }
+
+.font-weight-heavy {
+  font-weight: 800 !important; }
+
+.font-weight-900 {
+  font-weight: 900 !important; }
+
+.font-weight-black {
+  font-weight: 900 !important; }
+
 html, body {
   font-size: 64px;
   line-height: 1.618; }
@@ -1156,5 +1246,10 @@ dd {
 @media print {
   .slides section {
     page-break-after: always; } }
+.overlay {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%; }
 
 /*# sourceMappingURL=style.css.map */

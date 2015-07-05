@@ -94,3 +94,15 @@
 		@include border-bottom-width($rule-width-name, true);
 	}
 }
+
+@each $font-size-name, $font-size in $font-sizes {
+	.font-size-#{$font-size-name} {
+		@include font-size($font-size-name, true);
+	}
+}
+
+@each $font-weight-name, $font-weight in $font-weights {
+	.font-weight-#{$font-weight-name} {
+		@include font-weight($font-weight-name, true);
+	}
+}

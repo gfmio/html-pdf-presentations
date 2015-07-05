@@ -85,11 +85,11 @@
 // Determines the appropriate line-height for a respective font-size based on the base-line grid
 
 @function grid-line-height($font-size, $base-line-height, $min-line-height: 1.2) {
-    $result: strip-units(ceil(strip-units(relative-size(strip-units($font-size), strip-units($base-line-height)))) * 
+    $result: 0.25 * strip-units(ceil(strip-units(relative-size(strip-units($font-size), 0.25 * strip-units($base-line-height)))) * 
         relative-size(strip-units($base-line-height), strip-units($font-size)));
 
     @if $result < $min-line-height {
-        $result: strip-units(ceil(1.0+strip-units(relative-size(strip-units($font-size), strip-units($base-line-height)))) * 
+        $result: 0.25 * strip-units(ceil(1.0+strip-units(relative-size(strip-units($font-size), 0.25 * strip-units($base-line-height)))) * 
             relative-size(strip-units($base-line-height), strip-units($font-size)));
     }
 
@@ -597,7 +597,7 @@ $rule-widths: () !default;
     @return get-item($fonts, $name);
 }
 @function font-size($name) {
-    @return get-item($font-sizes, $name);
+    @return rem(get-item($font-sizes, $name));
 }
 @function font-weight($name) {
     @return get-item($font-weights, $name);
@@ -625,9 +625,9 @@ $rule-widths: () !default;
         background-color: color($name) !important;
 
         @if (lightness(color($name)) < 50%) {
-            @include text-color("white", true);
+            @include text-color("white", false);
         } @else {
-            @include text-color("black", true);
+            @include text-color("black", false);
         }
     } @else {
         background-color: color($name);
